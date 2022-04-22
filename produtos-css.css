@@ -1,0 +1,177 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: #bbbbbb;
+	padding: 20px 0;
+}
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0px;
+}
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #c78c19;
+	text-decoration: underline;
+}
+
+
+.produtos {
+	width: 70%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 20px 0 0;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border:2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #c78c19;
+}
+
+.produtos li:active {
+	border-color: #088c19;
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+} 
+
+.produtos h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+.produto_descricao {
+	font-size: 18px;
+}
+.produto_preco {
+	font-size:22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background:url(bg.jpg);
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0;
+}
+
+
+@media screen and (max-width: 468px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+	nav {
+		position: static;
+		text-align: center;
+	}
+	nav a {
+		font-size: 19px;
+	} 
+	.produtos li {
+		width: 85%;
+		margin-left: 7%;
+		margin-bottom: 10px;
+		
+	}  
+	.detalhes {
+		width: 60%;
+	} 
+
+	.produto_descricao {
+		text-align: center;
+		font-size: 25px;
+	}
+	.requisito, .checkbox {
+		font-size: 30px;
+		margin-left: 20px;
+	}
+	.input-padrao {
+		font-size: 30px;
+	}
+	.enviar, .checkbox, .escolha_horario {
+		margin-left: 20px;
+	}	
+}
+
+
+@media screen and (min-width: 469px) and (max-width: 800px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+	nav {
+		position: static;
+		text-align: center;
+	}
+	nav a {
+		font-size: 19px;
+	} 
+	.produtos li {
+		display: inline-block;
+		width: 28%;
+		margin: 2%;
+		margin-bottom: 10px;
+		
+	}  
+	.detalhes {
+		width: 90%;
+	} 
+
+	.produtos h2 {
+		font-size: 120%;
+	}
+
+	.produto_descricao {
+		text-align: center;
+		font-size: 15px;
+	}
+	.produto_preco {
+		font-size: 16px;
+	}
+	.input-padrao {
+		font-size: 30px;
+	}
+		
+}
+
